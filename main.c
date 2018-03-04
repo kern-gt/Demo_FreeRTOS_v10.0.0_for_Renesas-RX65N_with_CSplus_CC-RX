@@ -79,7 +79,7 @@ void vTask2(void *pvParameters)
 	コード生成ツールを使用する場合はCMT0を使用しないようにする。
 	以下の関数はデモ用のサンプルを参考に一部修正している。
 		　デフォルトのtick周波数は1000Hzでこのまま使うのであれば問題ないが、100Hzで使いたい場合は114Hz以下の
-		設定ができないのでその際はCMT0のクロックソースをPCLK/8からPCLK/32に変更するようにしている。ただし、
+		設定ができないのでその際はCMT0のクロックソースをPCLKB/8からPCLKB/32に変更するようにしている。ただし、
 		30Hz未満にはできないので注意すること。
 	
 	 The RX port uses this callback function to configure its tick interrupt.

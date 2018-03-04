@@ -22,7 +22,7 @@
 * Version      : 1.3.0
 * Device(s)    : R5F565NEDxFP
 * Description  : This file implements device driver for Config_PORT.
-* Creation Date: 2018-03-04
+* Creation Date: 2018-03-05
 ***********************************************************************************************************************/
 
 #ifndef Config_PORT_H

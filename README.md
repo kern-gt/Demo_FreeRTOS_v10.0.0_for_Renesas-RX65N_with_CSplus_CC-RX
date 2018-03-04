@@ -1,24 +1,24 @@
-#FreeRTOS Ver10.0.0 DemoProject for Renesas RX65N (CS+ CC-RX)
+# FreeRTOS Ver10.0.0 DemoProject for Renesas RX65N (CS+ CC-RX)
 
 　このデモはFreeRTOSv10.0.0をRenesas RX65Nマイコン用に移植したものです。
 素人の自分が個人仕様目的で作成したものですのでこれに関する一切の責任を取りません。
 
 文字コードは__UTF-8__を使用しています。
 
-##動作環境
+## 動作環境
 FreeRTOS:v10.0.0 (RX600 RXv2)  
 開発環境：CS+forCC V6.01.00  
 コンパイラ：CC-RX V2.08.00 (C99)  
 CPUボード：TARGET BOARD for RX65N (RTK5RX65N0C00000BR)  
 CPU：R5F565NEDDFP (100-pin LFQFP,120MHz,RAM 640KB,ROM 2MB+32KB)
 
-##サンプルコード内容
+## サンプルコード内容
 CPUボード上のLED0(PD6)を1Hz、LED1(PD7)を5Hzで点滅させる2つのタスクを動かします。
 
 　クロック発生回路とポート初期化をスマートコンフィグレータで設定しています。 
 FreeRTOSではカーネルタイマにCMT0,システムコールにソフトウェア割込み(SWINT)を使用しているので、その機能は使用しないでください。
 
-##ファイル構成
+## ファイル構成
 自力でプロジェクトを作るためのメモ。`main.c`と`ApplicationHook.c`は自分が用意しています。
 
   1. FreeRTOSフォルダ以下をそのままプロジェクトフォルダにコピーしてプロジェクトに登録。
@@ -26,7 +26,7 @@ FreeRTOSではカーネルタイマにCMT0,システムコールにソフトウ�
   1. main.cにある`vApplicationSetupTimerInterrupt()`も必ず必要なので適当にどこかに定義する。
   1. `/FreeRTOS/FreeRTOSConfig.h`を目的に合わせて設定する。
 
-##注意点
+## 注意点
 * ソースコードの文字エンコードに__UTF-8__を使用するため、ビルド設定をShift-JISからUTF-8に変更してあります。
 * FreeRTOSのメモリ管理ファイルは「heap_1.c」を使用しています。目的に応じて変更してください。
 * iodefine.hの不具合について  

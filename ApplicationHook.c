@@ -12,7 +12,6 @@
 /* Renesas includes. */
 /*#include "r_cg_macrodriver.h"*/
 /*#include "r_cg_userdefine.h"*/
-/*#include <stdio.h>*/
 /*#include "iodefine.h"*/
 
 /* Kernel includes. */

@@ -14,7 +14,7 @@ FreeRTOS:v10.0.0 (RX600 RXv2)
 開発環境：CS+forCC V6.01.00  
 コンパイラ：CC-RX V2.08.00 (C99)  
 CPUボード：TARGET BOARD for RX65N (RTK5RX65N0C00000BR)  
-CPU(ボード上)：R5F565NEDDFP (100-pin LFQFP,120MHz,RAM 640KB,ROM 2MB+32KB)
+CPU(ボード上)：R5F565NEDDFP (100-pin LFQFP,120MHz,RAM 640KB,ROM 2MB+32KB)  
 E2エミュレータLite(ボード上)：この環境ではデバッグに使用できるようです。ただ、RFPによるプログラム書き込みは今はできません。
 
 

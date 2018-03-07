@@ -14,7 +14,9 @@ FreeRTOS:v10.0.0 (RX600 RXv2)
 開発環境：CS+forCC V6.01.00  
 コンパイラ：CC-RX V2.08.00 (C99)  
 CPUボード：TARGET BOARD for RX65N (RTK5RX65N0C00000BR)  
-CPU：R5F565NEDDFP (100-pin LFQFP,120MHz,RAM 640KB,ROM 2MB+32KB)
+CPU(ボード上)：R5F565NEDDFP (100-pin LFQFP,120MHz,RAM 640KB,ROM 2MB+32KB)
+E2エミュレータLite(ボード上)：この環境ではデバッグに使用できるようです。ただ、RFPによるプログラム書き込みは今はできません。
+
 
 ## サンプルコード内容
 CPUボード上のLED0(PD6)を1Hz、LED1(PD7)を5Hzで点滅させる2つのタスクを動かします。
@@ -33,6 +35,7 @@ FreeRTOSではカーネルタイマにCMT0,コンテキストスイッチにソ�
   1. `/FreeRTOS/FreeRTOSConfig.h`を目的に合わせて設定する。
   1. 各ソースファイルで`FreeRTOS.h, task.h, queue.h`など適切なヘッダをインクルードする。
   1. ビルドする。
+  1. 任意でデバッグなどなど。
 
 ## 注意点
 * ソースコードの文字エンコードに __UTF-8__ を使用するため、ビルド設定をShift-JISからUTF-8に変更してあります。

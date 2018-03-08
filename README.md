@@ -9,7 +9,7 @@
  
 参考にさせていただいたもの  
 　<https://blog.goo.ne.jp/lm324/e/99f735aef942ce6b965cd2f985acdf73>  
-　<http://be-con.jp/shiryo/renesas-rx62-freertos-csprj.html> 
+　<http://be-con.jp/shiryo/renesas-rx62-freertos-csprj.html>  
 　<https://www.freertos.org/RX64M_RTOS_Renesas_GCC_e2studio.html>  
 大変参考になりました。ありがとうございました。
 
